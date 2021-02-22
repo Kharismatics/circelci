@@ -15,13 +15,13 @@ jobs:
       # Using the RAM variation mitigates I/O contention
       # for database intensive operations.
       - image: circleci/mysql:5.7-ram
-      - image: circleci/mysql:8.0.20-ram
-        command: mysqld --default-authentication-plugin=mysql_native_password
-        environment:
-          MYSQL_USER: root
-          MYSQL_DATABASE: circleci
-          MYSQL_ROOT_PASSWORD: ''
-          MYSQL_PASSWORD: 'bismill4h'
+      # - image: circleci/mysql:8.0.20-ram
+      #   command: mysqld --default-authentication-plugin=mysql_native_password
+      #   environment:
+      #     MYSQL_USER: root
+      #     MYSQL_DATABASE: circleci
+      #     MYSQL_ROOT_PASSWORD: ''
+      #     MYSQL_PASSWORD: 'bismill4h'
       #
       # - image: redis:2.8.19
 
